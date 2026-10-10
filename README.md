@@ -88,7 +88,7 @@ def client(app):
     return app.test_client()
 ```
 
-E os testes simplesmente declaram o que precisam como parâmetro — o pytest injeta as fixtures pelo nome ([`tests/test_basic.py`](https://github.com/pallets/flask/blob/main/tests/test_basic.py)):
+E os testes simplesmente declaram o que precisam como parâmetro, o pytest injeta as fixtures pelo nome ([`tests/test_basic.py`](https://github.com/pallets/flask/blob/main/tests/test_basic.py)):
 
 ```python
 def test_options_work(app, client):
